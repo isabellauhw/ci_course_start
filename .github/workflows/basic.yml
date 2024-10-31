@@ -1,7 +1,9 @@
 name: Basic GitHub Actions Workflow
 
-on:
+on:  
   push:
+    branches:
+      - main
   pull_request:
   workflow_dispatch:
 
@@ -12,3 +14,4 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo "Hello, world!"
+
