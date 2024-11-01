@@ -1,21 +1,17 @@
-version: 2
+version: 0.0.1
 
 build:
-  os:
-    - ubuntu-22.04  # Specify the first operating system
-    - ubuntu-20.04  # Specify the second operating system
+  os: ubuntu-22.04  # Specify a valid operating system
   tools:
-    python:
-      - "3.8"  # Specify the first Python version
-      - "3.9"  # Specify the second Python version
+    python: "3.8"  # Specify the Python version you want to use
 
 python:
-  version: 3.8  # This will be overridden by the matrix
+  version: 3.8
   install:
     - method: pip
       path: .
       extra_requirements:
-        - docs
+        - docs  # Ensure you have a 'docs' extra requirement in your setup.py or requirements.txt
 
 sphinx:
   builder: html
