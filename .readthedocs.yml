@@ -1,14 +1,23 @@
 version: 2
 
+build:
+  os:
+    - ubuntu-22.04  # Specify the first operating system
+    - ubuntu-20.04  # Specify the second operating system
+  tools:
+    python:
+      - "3.8"  # Specify the first Python version
+      - "3.9"  # Specify the second Python version
+
 python:
-   version: 3.8
-   install:
-      - method: pip
-        path: .
-        extra_requirements:
-            - docs
+  version: 3.8  # This will be overridden by the matrix
+  install:
+    - method: pip
+      path: .
+      extra_requirements:
+        - docs
 
 sphinx:
   builder: html
-  configuration: docs/conf.py
+  configuration: docs/conf.py  # Ensure this path is correct
   fail_on_warning: true
