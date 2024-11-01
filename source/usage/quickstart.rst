@@ -19,3 +19,4 @@ Follow these steps to install **My Project**:
    ```bash
    git clone https://github.com/username/my_project.git
    cd my_project
+   ```
