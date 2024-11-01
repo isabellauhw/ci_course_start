@@ -6,7 +6,7 @@ build:
     python: "3.8"  # Specify the Python version you want to use
 
 python:
-  version: 3.8
+  version: 3.12.6
   install:
     - method: pip
       path: .
@@ -15,5 +15,5 @@ python:
 
 sphinx:
   builder: html
-  configuration: docs/conf.py  # Ensure this path is correct
+  configuration: docs/conf.py 
   fail_on_warning: true
