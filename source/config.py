@@ -23,7 +23,6 @@ html_theme = 'alabaster'  # Choose a theme (e.g., 'alabaster', 'sphinx_rtd_theme
 html_static_path = ['_static']  # Path to custom static files (e.g., CSS)
 
 # -- Options for autodoc extension -------------------------------------------
-# Optional settings if using autodoc to document Python code
 autodoc_member_order = 'bysource'  # Order members by source order
 autodoc_default_options = {
     'members': True,  # Include class members
