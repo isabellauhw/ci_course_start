@@ -2,11 +2,9 @@ version: 2
 
 build:
   os: ubuntu-22.04  # Specify a valid operating system
-  tools:
-    python: "3.8"  # Specify the Python version you want to use
 
 python:
-  version: 3.12.6
+  version: "3.12"
   install:
     - method: pip
       path: .
